@@ -68,10 +68,50 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "302d7ab3130588088d277783b1e2d2e10c9e9e4a16dd9050e6ec93fb3e7048f4"
 
 [[package]]
+name = "literalext"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2f42dd699527975a1e0d722e0707998671188a0125f2051d2d192fc201184a81"
+
+[[package]]
+name = "matches"
+version = "0.1.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
+
+[[package]]
+name = "maud"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "337b4b2512ff8809450badd92cf3b529dc6108e333dfa1626971412f8de5793b"
+dependencies = [
+ "maud_htmlescape",
+ "maud_macros",
+]
+
+[[package]]
+name = "maud_htmlescape"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0555daa37f94b5ebb206faf8cdc7b260c2aa371b509e929de9a1e37416d97fa6"
+
+[[package]]
+name = "maud_macros"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f58751cda7f79eedc668ce60e5bcd88dca49e412ec37545a792e2c399fbca41"
+dependencies = [
+ "literalext",
+ "matches",
+ "maud_htmlescape",
+]
+
+[[package]]
 name = "mdrend"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "maud",
  "pulldown-cmark",
 ]
 

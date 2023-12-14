@@ -9,3 +9,4 @@ edition = "2021"
 [dependencies]
 clap = "2.33.11"
 pulldown-cmark = "0.4.1"
+maud = "0.20.0"
