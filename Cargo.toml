@@ -3,6 +3,10 @@ name = "mdrend"
 version = "0.1.0"
 authors = ["froilan <froilan@virtual-artifact.com>"]
 edition = "2021"
+license = "MIT"
+keywords = [ "Parse", "markdown" ]
+repository = "https://github.com/froilan-miranda/mdrend"
+description = "Renders markdown to HTML"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
